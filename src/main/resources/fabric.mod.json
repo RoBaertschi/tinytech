@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "tinytech",
+  "version": "${version}",
+  "name": "Tinytech",
+  "description": "Tinytech is a tiny Tech mod.",
+  "authors": [
+    "RoBaertschi"
+  ],
+  "contact": {
+    "website": "https://robaertschi.github.io",
+    "repo": "https://github.com/RoBaertschi/tinytech"
+  },
+  "license": "MIT",
+  "icon": "assets/tinytech/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "robaertschi.tinytech.client.TinytechClient"
+    ],
+    "main": [
+      "robaertschi.tinytech.Tinytech"
+    ]
+  },
+  "mixins": [
+    "tinytech.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
